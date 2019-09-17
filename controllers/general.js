@@ -17,7 +17,7 @@ exports.contact_us_post=(req,res)=>{
 sgMail.setApiKey('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');
 const msg = {
   to: 'mohit.gupta30000@gmail.com',
-  from : { email : 'noreply@skilldosti.com' , name: 'no-reply'},
+  from : { email : 'noreply@dsccgc.com' , name: 'no-reply'},
   subject: 'Sending with Twilio SendGrid is Fun',
   text: 'and easy to do anywhere, even with Node.js',
   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
