@@ -1,0 +1,77 @@
+<script>const second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24;
+
+let countDown = new Date('September 21, 2019 10:00:00').getTime(),
+  x = setInterval(function() {
+    let now = new Date().getTime(),
+        distance = countDown - now;
+    document.getElementById('days').innerText = Math.floor(distance / (day)),
+      document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+      document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+      document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+  }, second)</script>
+<section id="event">
+    <div class="block remove-top less-bottom">
+        <div class="container fluid expadding">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="countsec">
+                        <h3 class=" wow fadeIn" data-wow-delay="0s">Upcoming Event</h3>
+                        <p class=" wow fadeIn" data-wow-delay="0.2s">A Workshop on Cloud Computing is being organised in CGC COE</p>
+                        <ul class="countdown-soon wow fadeIn" data-wow-delay="0.4s">
+                            <li class="days-soon"><span  id ="days" class="days">00</span><p class="days_ref">days</p></li>
+                            <li class="hours-soon"> <span id="hours" class="hours">00</span><p class="hours_ref">hours</p></li>
+                            <li class="minutes-soon"> <span  id="minutes" class="minutes">00</span><p class="minutes_ref">minutes</p></li>
+                            <li class="seconds-soon"> <span  id="seconds" class="seconds">00</span><p class="seconds_ref">seconds</p></li>
+                        </ul>
+                        <ul class="btns wow fadeIn" data-wow-delay="0.6s">
+                            <li><a class="gradient theme-btn" href="#" title="">Regitser Now</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="block remove-top">
+        <div class="container fluid expadding">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="someblock">
+                        <li class=" wow fadeIn" data-wow-delay="0s">
+                            <span>Start</span>
+                            <p>Sep 23, 2019 (9:00AM IST)</p>
+                        </li>
+                        <li class=" wow fadeIn" data-wow-delay="0.2s">
+                            <span>End</span>
+                            <p>Sep 23, 2019 (9:00AM IST)</p>
+                        </li>
+                        <li class=" wow fadeIn" data-wow-delay="0.4s">
+                            <span>Acceptable currencies</span>
+                            <p>INR, BTC, LTC</p>
+                        </li>
+                    </ul>
+                    <ul class="someblock">
+                        <li class=" wow fadeIn" data-wow-delay="0.6s">
+                            <span>Number of tokens for sale</span>
+                            <p>900,000 ICC (9%)</p>
+                        </li>
+                        <li class=" wow fadeIn" data-wow-delay="0.8s">
+                            <span>Tokens exchange rate</span>
+                            <p>1 ETH = 650 ICC, 1 BTC = 1940 ICC</p>
+                        </li>
+                        <li class=" wow fadeIn" data-wow-delay="0.10s">
+                            <span>Minimal transaction amount</span>
+                            <p>1 ETH/ 1 BTC/ 1 LTC</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
