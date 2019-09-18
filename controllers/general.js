@@ -29,3 +29,10 @@ sgMail.send(msg).then((sent,err) => {
   console.log(err)
 })
 }
+
+exports.cgc_cloud=(req,res)=>{
+  res.render('cgc-cloud', {
+    title: 'Cloud Workshop Registration',
+    req
+  })
+}
