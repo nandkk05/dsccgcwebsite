@@ -530,7 +530,7 @@ header.sticky.light{background:#fff;}
 .menusec nav > ul > li::before{position:absolute;left:0;top:34px;width:0px;height:1px;background:#fa3966;content:"";}
 .menusec nav > ul > li:hover::before{width:100%;}
 .menusec nav > ul > li.active::before{width:100%;}
-.contactformsec > form .loader{background:#ffffff;-webkit-border-radius:20px;-moz-border-radius:20px;-ms-border-radius:20px;-o-border-radius:20px;border-radius:20px;float:right;margin-top:-38px;position:relative;margin-right:20px;}
+.contactformsec > form .loader{background:#ffffff;-webkit-border-radius:20px;height:35px;-moz-border-radius:20px;-ms-border-radius:20px;-o-border-radius:20px;border-radius:20px;float:right;margin-top:-38px;position:relative;margin-right:20px;}
 nav > ul > li.menu-item-has-children ul{background:#212169 none repeat scroll 0 0;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px;left:-170px;list-style:outside none none;margin:0;padding:25px 0;position:absolute;top:100%;visibility:hidden;width:230px;opacity:0;transition:all 0.4s ease 0s;}
 .menusec nav li.menu-item-has-children:hover > ul{opacity:1;visibility:visible;}
 nav > ul > li.menu-item-has-children ul > li{float:left;width:100%;padding:8px 30px;margin:0;}

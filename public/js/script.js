@@ -1,38 +1,37 @@
 $(document).on('ready',function(){
     "use strict";
-    
+
     /* =============== Ajax Contact Form ===================== */
     $('#contactform').submit(function(){
         var action = $(this).attr('action');
         $("#message").slideUp(750,function() {
         $('#message').hide();
             $('#submit')
-            .after('<img src="images/ajax-loader.gif" class="loader" />')
+            .after('<img src="https://loading.io/spinners/dual-ring/lg.dual-ring-loader.gif" class="loader" />')
             .attr('disabled','disabled');
         $.post(action, {
             name: $('#name').val(),
             email: $('#email').val(),
             comments: $('#comments').val(),
-            verify: $('#verify').val()
+            number: $('#number').val()
         },
-            function(data){
+            function(data,err){
                 document.getElementById('message').innerHTML = data;
                 $('#message').slideDown('slow');
                 $('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
                 $('#submit').removeAttr('disabled');
                 if(data.match('success') != null) $('#contactform').slideUp('slow');
-
             }
         );
         });
         return false;
-    });  
-        
-    (function ($) { 
+    });
+
+    (function ($) {
     $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
 
-    $('.tab ul.tabs li a').on('click', function(g){ 
-         var tab = $(this).closest('.tab'), 
+    $('.tab ul.tabs li a').on('click', function(g){
+         var tab = $(this).closest('.tab'),
         index = $(this).closest('li').index();
 
         tab.find('ul.tabs > li').removeClass('current');
@@ -46,8 +45,8 @@ $(document).on('ready',function(){
     })(jQuery);
 
 
-    /*** FIXED Menu APPEARS ON SCROLL DOWN ***/ 
-    $(window).on('scroll', function(){  
+    /*** FIXED Menu APPEARS ON SCROLL DOWN ***/
+    $(window).on('scroll', function(){
         var scroll = $(window).scrollTop();
         if (scroll >= 50) {
         $("header").addClass("sticky");
@@ -75,7 +74,7 @@ $(document).on('ready',function(){
             $(this).parent().toggleClass("active");
             return false;
         });
-    }  
+    }
 
     $('#toggle-widget .content').hide();
         $('#toggle-widget h2:first').addClass('active').next().slideDown('slow');
@@ -98,10 +97,10 @@ $(document).on('ready',function(){
         $('.open-minimal-menu.resopen #hamburger-two').toggleClass('active');
         $(this).toggleClass('active');
     });
-    
+
 
     var tabs =  $(".ctabs li a");
-  
+
     tabs.click(function() {
         var content = this.hash.replace('/','');
         tabs.removeClass("active");
