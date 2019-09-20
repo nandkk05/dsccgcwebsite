@@ -49,6 +49,9 @@ app.set('views', path.join(__dirname, 'views'));
 //setting middleware for cookieParser
 app.use(cookieParser('keyboard cat'));
 app.use(compression());
+app.use(compression({
+  filter: function () { return true; }
+}));
 //setting middleware for session
 app.use(session({
   secret: 'keyboard cat',
