@@ -7,7 +7,7 @@ $(document).on('ready',function(){
         $("#message").slideUp(750,function() {
         $('#message').hide();
             $('#submit')
-            .after('<img src="images/ajax-loader.gif" class="loader" />')
+            .after('<img src="https://loading.io/spinners/dual-ring/lg.dual-ring-loader.gif" class="loader" />')
             .attr('disabled','disabled');
         $.post(action, {
             name: $('#name').val(),
