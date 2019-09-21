@@ -7,6 +7,13 @@ exports.index = (req, res) => {
         req
       })
 }
+
+exports.dsc_full_team = (req, res) => {
+  res.render('full-team', {
+      title: 'Index',
+      req
+    })
+}
 exports.contact_us = (req, res) => {
   res.render('contact-us', {
       title: 'Contact Us',
