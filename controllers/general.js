@@ -25,7 +25,7 @@ exports.contact_us_post=(req,res)=>{
 sgMail.setApiKey(keys.sendapi);
 const msg = {
   to: req.body.email,
-  from : { email : 'noreply@dsccg.com' , name: 'no-reply'},
+  from : { email : 'noreply@dsccg.in' , name: 'no-reply'},
   subject: 'Thanks For Contacting DSC CGC.',
   text: 'Your Query have been successfully received by DSC CGC.You will be Contacted Shortly',
   html: '<strong>Your Query have been successfully received by DSC CGC.You will be Contacted back Shortly.</strong>'
