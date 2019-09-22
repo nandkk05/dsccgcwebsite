@@ -1,6 +1,5 @@
 $(document).on('ready',function(){
     "use strict";
-
     /* =============== Ajax Contact Form ===================== */
     $('#contactform').submit(function(){
         var action = $(this).attr('action');
@@ -26,7 +25,6 @@ $(document).on('ready',function(){
         });
         return false;
     });
-
     (function ($) {
     $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
 
