@@ -7,10 +7,6 @@ let countDown = new Date('September 23, 2019 16:30:00').getTime(),
   x = setInterval(function() {
     let now = new Date().getTime(),
         distance = countDown - now;
-    document.getElementById('days').innerText = Math.floor(distance / (day)),
-      document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-      document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-      document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
 
   }, second)</script>
 <section id="event">
@@ -22,7 +18,7 @@ let countDown = new Date('September 23, 2019 16:30:00').getTime(),
                         <h3 class=" wow fadeIn" data-wow-delay="0s">Upcoming Event</h3>
                         <p class=" wow fadeIn" data-wow-delay="0.2s">A Workshop on Cloud Computing is Going On in CGC COE.<br/>On the Occasion of Cloud Day.</p>
                         <p class=" wow fadeIn" data-wow-delay="0.2s">Workshop will end in</br>.</p>
-                        
+
                         <ul class="countdown-soon wow fadeIn" data-wow-delay="0.4s">
                             <li class="days-soon"><span  id ="days" class="days">00</span><p class="days_ref">days</p></li>
                             <li class="hours-soon"> <span id="hours" class="hours">00</span><p class="hours_ref">hours</p></li>
