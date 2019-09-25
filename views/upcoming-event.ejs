@@ -3,11 +3,14 @@
     hour = minute * 60,
     day = hour * 24;
 
-let countDown = new Date('September 23, 2019 16:30:00').getTime(),
+let countDown = new Date('October 01, 2019 10:00:00').getTime(),
   x = setInterval(function() {
     let now = new Date().getTime(),
         distance = countDown - now;
-
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+      document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+      document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+      document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
   }, second)</script>
 <section id="event">
     <div class="block remove-top less-bottom">
@@ -16,9 +19,7 @@ let countDown = new Date('September 23, 2019 16:30:00').getTime(),
                 <div class="col-lg-12">
                     <div class="countsec">
                         <h3 class=" wow fadeIn" data-wow-delay="0s">Upcoming Event</h3>
-                        <p class=" wow fadeIn" data-wow-delay="0.2s">A Workshop on Cloud Computing is Going On in CGC COE.<br/>On the Occasion of Cloud Day.</p>
-                        <p class=" wow fadeIn" data-wow-delay="0.2s">Workshop will end in</br>.</p>
-
+                        <p class=" wow fadeIn" data-wow-delay="0.2s">A Workshop on Actions on Google is Going to be Held  in CGC COE.<br/></p>
                         <ul class="countdown-soon wow fadeIn" data-wow-delay="0.4s">
                             <li class="days-soon"><span  id ="days" class="days">00</span><p class="days_ref">days</p></li>
                             <li class="hours-soon"> <span id="hours" class="hours">00</span><p class="hours_ref">hours</p></li>
@@ -26,7 +27,7 @@ let countDown = new Date('September 23, 2019 16:30:00').getTime(),
                             <li class="seconds-soon"> <span  id="seconds" class="seconds">00</span><p class="seconds_ref">seconds</p></li>
                         </ul>
                         <ul class="btns wow fadeIn" data-wow-delay="0.6s">
-                            <li><a target="_blank" class="gradient theme-btn" href="/cgc-cloud" title="">Regitser Now</a></li>
+                            <li><a target="_blank" class="gradient theme-btn" href="# title="">Registration will Start Soon.</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,11 +43,11 @@ let countDown = new Date('September 23, 2019 16:30:00').getTime(),
                     <ul class="someblock">
                         <li class=" wow fadeIn" data-wow-delay="0s">
                             <span>Start</span>
-                            <p>Sep 23, 2019 (10:00AM IST)</p>
+                            <p>October 01, 2019 (10:00AM IST)</p>
                         </li>
                         <li class=" wow fadeIn" data-wow-delay="0.2s">
                             <span>End</span>
-                            <p>Sep 23, 2019 (04:00PM IST)</p>
+                            <p>October 01, 2019 (01:00PM IST)</p>
                         </li>
                         <li class=" wow fadeIn" data-wow-delay="0.4s">
                             <span>Venue</span>
@@ -56,11 +57,11 @@ let countDown = new Date('September 23, 2019 16:30:00').getTime(),
                     <ul class="someblock">
                         <li class=" wow fadeIn" data-wow-delay="0.6s">
                             <span>Registration Fees</span>
-                            <p>RS.30/</p>
+                            <p>Free of Cost.</p>
                         </li>
                         <li class=" wow fadeIn" data-wow-delay="0.8s">
-                            <span>Pay At</span>
-                            <p>nandkk07@okicici</p>
+                            <span>What Actions on Google Is ?</span>
+                            <p><a target="_blank" href="https://developers.google.com/actions/overview">Actions on Google Is ?</a></p>
                         </li>
                         <li class=" wow fadeIn" data-wow-delay="0.10s">
                             <span>Interested ? Contact</span>
