@@ -63,3 +63,12 @@ exports.cgc_cloud=(req,res)=>{
     req
   })
 }
+exports.gcpcrashcourse=(req,res)=>{
+  res.render('crash-course', {
+    title: 'Cloud Workshop Registration',
+    req
+  })
+}
+exports.gcpcrashcourse_2=(req,res)=>{
+ res.redirect('https://gcpcrashcourse-cgc.netlify.com/');
+}
