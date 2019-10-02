@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
     // Scroll on know more button click
     $('.know-more-button').click(function(){
         $('html, body').animate({
@@ -9,11 +9,11 @@ $(document).ready(function(){
 
     // Link click actions
 
-    $('.data science').click(function(){
+    $('.data').click(function(){
         window.open('https://bit.ly/cgcgcpdatascience')
     })
 
-    $('.app development').click(function(){
+    $('.android').click(function(){
         window.open('https://bit.ly/cgcgcpappdev')
     })
 
