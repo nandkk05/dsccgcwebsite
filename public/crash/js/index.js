@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    
     // Scroll on know more button click
     $('.know-more-button').click(function(){
         $('html, body').animate({
