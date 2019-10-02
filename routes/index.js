@@ -12,4 +12,8 @@ router.get('/actions-on-google', generalController.cgc_cloud);
 
 router.get('/dsc-team', generalController.dsc_full_team);
 
+router.get('/gcpcrashcourse', generalController.gcpcrashcourse);
+
+router.get('/gcpcrashcourse-2', generalController.gcpcrashcourse_2);
+
 module.exports = router;
