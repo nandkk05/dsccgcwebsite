@@ -8,7 +8,7 @@ router.get('/contact-us', generalController.contact_us);
 
 router.post('/contact-us', generalController.contact_us_post);
 
-router.get('/actions-on-google', generalController.cgc_cloud);
+router.get('/cgc-ml', generalController.cgc_ml);
 
 router.get('/dsc-team', generalController.dsc_full_team);
 

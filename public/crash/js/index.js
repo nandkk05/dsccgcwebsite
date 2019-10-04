@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+
     // Scroll on know more button click
     $('.know-more-button').click(function(){
         $('html, body').animate({
@@ -7,6 +7,9 @@ $(document).ready(function(){
         }, 500);
     })
 
+    // Link click actions
+
+})
 
 window.addEventListener('beforeinstallprompt', (e) => {
   // Stash the event so it can be triggered later.
