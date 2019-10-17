@@ -45,7 +45,7 @@ sgMail.setApiKey(keys.sendapi);
 const msg = {
   to: 'dsc.cgc.coe@gmail.com',
   from : { email : 'noreply@dsccg.com' , name: 'no-reply'},
-  bcc:['mohit.gupta30000@gmail.com'],
+  bcc:['mohit.gupta30000@gmail.com','nandkk07@gmail.com'],
   subject: `Contact Request From ${req.body.name}`,
   text: 'Someone have submitted a Request To Contact You',
   html: `<strong>Request Form have been submitted by ${req.body.name} ${req.body.email} ${req.body.number} ${req.body.comments}</strong>`
